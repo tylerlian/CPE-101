@@ -86,7 +86,7 @@ if __name__ == "__main__":
     subtract = big - small
 
     # splits the int into 4 parts
-    a = subtract//1000
+    a = subtract // 1000
     b = (subtract - 1000 * a) // 100
     c = (subtract - 1000 * a - 100 * b) // 10
     d = (subtract - 1000 * a - 100 * b - 10 * c)
