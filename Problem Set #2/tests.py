@@ -6,49 +6,34 @@
 # Cal Poly ID: 015896500
 ################################
 
+# runs all functions if file is run as main file
 if __name__ == "__main__":
-    
+
+    # import packages 
+    import math
+
     #### print_hello ####
 
     # inputs 'Hello' in front of given name
     def print_hello(name):
         x = ("Hello " + name)
         return x
-    
-    # tests the program to see if it works as it should
-    assert print_hello("John") == "Hello John"
-    assert print_hello("Brandon") == "Hello Brandon"
-    assert print_hello("Tyler") == "Hello Tyler"
-    
-    # tells user that program works if no errors
-    print("print_hello: Correct")
 
     #### get_numbers ####
 
     # returns the sum of two numbers inputted by user
     def get_numbers():
-        x = input("Enter a number: ")
-        y = input("Enter a number: ")
+        x = input("Enter number #1: ")
+        y = input("Enter number #2: ")
         sum = int(x) + int(y)
         return sum
 
-    # allows the user to see their sum
-    print("The sum of the numbers inputted: " + str(get_numbers()))
-    
     #### cube ####
 
     # cubes the number given by user
     def cube(x):
         y = x ** 3
         return y 
-
-    # tests the program to see if it works as it should
-    assert cube(3) == 27
-    assert cube(2) == 8
-    assert cube(1) == 1
-
-    # tells user that program works if no errors
-    print("cube: Correct")
 
     #### get_hypotenuse ####
 
@@ -58,14 +43,6 @@ if __name__ == "__main__":
         h = (h ** .5)
         return h
 
-    # tests the program to see if it works as it should
-    assert get_hypotenuse(3, 4) == 5
-    assert get_hypotenuse(5, 12) == 13
-    assert get_hypotenuse(8, 15) == 17
-
-    # tells user that program works if no errors
-    print("get_hypotenuse: Correct")
-
     #### do_math ####
 
     # does math equation assigned with numbers inputted by user
@@ -73,27 +50,11 @@ if __name__ == "__main__":
         z = ((3 * (x ** 2)) + (4 * y)) / (2 * x)
         return z
 
-    # tests the program to see if it works as it should
-    assert do_math(1, 1) == 3.5
-    assert do_math(6, 0) == 9
-    assert do_math(2, 4) == 7
-
-    # tells user that program works if no errors
-    print("do_math: Correct")
-
     #### is_positive ####
 
     # tells user if their number is positive or not
     def is_positive(x):
         return x > 0
-
-    # tests the program to see if it works as it should
-    assert is_positive(3) == True
-    assert is_positive(-2) == False
-    assert is_positive(1) == True
-
-    # tells user that program works if no errors
-    print("is_positive: Correct")
 
     #### both_positive ####
 
@@ -103,11 +64,68 @@ if __name__ == "__main__":
         w = is_positive(y)
         return z == w == True
 
-    # tests the program to see if it works as it should
-    assert both_positive(3, 4) == True
-    assert both_positive(2, -2) == False
-    assert both_positive(-1, -3) == False
+    # creates coordinate points
+    class Point:
 
-    # tells user that program works if no errors
-    print("both_positive: Correct")
-    
+        # self denotes this object itself
+        def __init__(self, x, y,):
+            self.x = x
+            self.y = y
+
+        # official string representation
+        def __repr__(self):
+            return "(%s, %s)" % (self.x, self.y)
+
+        # define equality
+        def __eq__(self, other):
+            return self.x == other.x and self.y == other.y
+
+    # equation for euclidean distance
+    def get_distance(p1, p2):
+        a = math.sqrt((p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2)
+        return round(a, 2)
+
+
+    # asks for user input to complete 'print_hello' function
+    x = input("Enter your name: ")
+    print(print_hello(x))
+
+    # asks for user input to complete 'get_numbers' function
+    print("Enter two numbers to receive sum")
+    print(get_numbers())
+
+    # asks for user input to complete 'cube' function
+    x = input("Enter number to cube it: ")
+    print(cube(int(x)))
+
+    # asks for user input to complete 'get_hypotenuse' function
+    print("Enter the legs of your triangles to receive the hypotenuse")
+    x = input("Enter leg #1: ")
+    y = input("Enter leg #2: ")
+    print(get_hypotenuse(int(x), int(y)))
+
+    # asks for user input to complete 'do_math' function
+    print("Enter x & y to input into equation '((3 * (x ** 2)) + (4 * y)) / (2 * x)'")
+    x = input("Enter x: ")
+    y = input("Enter y: ")
+    print(do_math(int(x), int(y)))
+
+    # asks for user input to complete 'is_positive' function
+    x = input("Enter number to see if it is positive: ")
+    print(is_positive(int(x)))
+
+    # asks for user input to complete 'both_positive' function
+    print("Input 2 numbers to see if they are both positive")
+    x = input("Enter number #1: ")
+    y = input("Enter number #2: ")
+    print(both_positive(int(x), int(y)))
+
+    # asks for user input to complete 'get_distance' function
+    print("Input coordinates for two points")
+    x = input("Enter #1 x-cordinate: ")
+    y = input("Enter #1 y-cordinate: ")
+    a = input("Enter #2 x-cordinate: ")
+    b = input("Enter #2 y-cordinate: ")
+    p1 = Point(float(x), float(y)) 
+    p2 = Point(float(a), float(b))
+    print(get_distance(p1, p2))
