@@ -65,7 +65,7 @@ def both_positive(x, y):
 class Point:
 
     # self denotes this object itself
-    def __init__(self, x, y,):
+    def __init__(self, x, y):
         self.x = x
         self.y = y
 
@@ -84,8 +84,6 @@ def get_distance(p1, p2):
     return round(a, 2)
 
 if __name__ == "__main__":
-    
-    
     
     # tests the program to see if it works as it should
     assert print_hello("John") == "Hello John"
@@ -137,9 +135,9 @@ if __name__ == "__main__":
     print("both_positive: Correct")
 
     # creates points to test function
-    p1 = Point(1,2)
-    p2 = Point(2,2)
-    p3 = Point(3,4)
+    p1 = Point(float(1),float(2))
+    p2 = Point(float(2),float(2))
+    p3 = Point(float(3),float(4))
 
     # tests the program to see if it works as it should
     assert get_distance(p1, p2) == 1.00

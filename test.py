@@ -13,3 +13,6 @@ z = 0
 z = (3(x ** 2))
 
 print(z)
+
+def update_fuel(fuel, fuel_rate):
+    fuel = fuel - fuel_rate
