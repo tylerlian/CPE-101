@@ -13,23 +13,23 @@ from moonlander import Moonlander
 # initialized variables
 gravity = 1.62
 time = 0
-fuel = 0
-velocity = 0.0
-altitude = 0.0
-acceleration = 0.0
 fuel_rate = 0
+ml = Moonlander(0,0)
+ml.velocity = 0.0
+ml.acceleration = 0.0
 
-
-# displays format of program
-moonlander.display_state(time, altitude, velocity, fuel, fuel_rate)
 
 # cannot be tested as they are user input
 moonlander.show_welcome()
-print(moonlander.get_altitude())
+altitude = moonlander.get_altitude()
 fuel = moonlander.get_fuel()
-print(fuel)
-fuel_rate = moonlander.get_fuel_rate(fuel)
+ml = Moonlander(altitude, fuel)
+print(ml.fuel)
+fuel_rate = moonlander.get_fuel_rate(ml.fuel)
 print(fuel_rate)
+
+# displays format of program
+moonlander.display_state(time, ml.altitude, ml.velocity, ml.fuel, fuel_rate)
 
 # tests for landing status
 x = print("Status at landing - The eagle has landed!")

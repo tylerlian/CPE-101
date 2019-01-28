@@ -12,11 +12,11 @@ import sys
 # initializing the moonlander class
 class Moonlander:
     
-    def __init__(self, altitude, fuel, velocity, acceleration):
-        self.fuel = fuel
+    def __init__(self, altitude, fuel):
         self.altitude = altitude
-        self.velocity = velocity
-        self.acceleration = acceleration
+        self.fuel = fuel
+        self.velocity = 0
+        self.acceleration = 0
 
     def __repr__(self): 
         return "fuel=" + "(%s)" + ", altitude=" + "(%s)" + ", velocity=" + "(%s)" + ", acceleration=" + "(%s)" % (self.fuel, self.altitude, self.velocity, self.acceleration)
@@ -54,7 +54,6 @@ def get_altitude():
     if(float(x) > 9999 or float(x) < 1) or (x == None):
         if(x == None):
             x = 0
-        print(x)
         print(x + " is not a number between 1 and 9999!")
         return get_altitude()
     else:
@@ -133,39 +132,41 @@ def update_fuel(fuel, fuel_rate):
 def main():
 
     # Initializes variables
+    ml = Moonlander(0, 0)
     time = 0
-    fuel_rate = 0
-    gravity = 1.62  
-    Moonlander.velocity = 0.0
-    Moonlander.acceleration = 0.0
-    Moonlander.fuel = 0
-    Moonlander.altitude = 0.0
+    gravity = 1.62
+    fuel_rate = 0  
+    ml.velocity = 0.0
+    ml.acceleration = 0.0
     
-
+    
     # Display welcome message
     show_welcome()
 
     # Gets the altitude
-    Moonlander.altitude = get_altitude()
+    altitude = get_altitude()
 
     # Gets the fuel
-    Moonlander.fuel = get_fuel()
+    fuel = get_fuel()
+
+
+    ml = Moonlander(altitude, fuel)
 
     # Will loop until altitude is less than 0
-    while(Moonlander.altitude) > 0:
+    while(ml.altitude) > 0:
         
         # Updates the Moonlander in a loop until altitude > 0
-        display_state(time, Moonlander.altitude, Moonlander.velocity, Moonlander.fuel, fuel_rate)
-        fuel_rate = get_fuel_rate(Moonlander.fuel)
-        Moonlander.acceleration = update_acceleration(gravity, fuel_rate)
-        Moonlander.altitude = update_altitude(Moonlander.altitude, Moonlander.velocity, Moonlander.acceleration)
-        Moonlander.velocity = update_velocity(Moonlander.velocity, Moonlander.acceleration)
-        Moonlander.fuel = update_fuel(Moonlander.fuel, fuel_rate)
+        display_state(time, ml.altitude, ml.velocity, ml.fuel, fuel_rate)
+        fuel_rate = get_fuel_rate(ml.fuel)
+        ml.acceleration = update_acceleration(gravity, fuel_rate)
+        ml.altitude = update_altitude(ml.altitude, ml.velocity, ml.acceleration)
+        ml.velocity = update_velocity(ml.velocity, ml.acceleration)
+        ml.fuel = update_fuel(ml.fuel, fuel_rate)
         time += 1
 
     # When loop ends prints last state and tells the landing status       
-    display_state(time, Moonlander.altitude, Moonlander.velocity, Moonlander.fuel, fuel_rate)
-    display_landing_status(Moonlander.velocity)	
+    display_state(time, ml.altitude, ml.velocity, ml.fuel, fuel_rate)
+    display_landing_status(ml.velocity)	
 
 # Will run if program is run as main file
 if __name__ == '__main__':
