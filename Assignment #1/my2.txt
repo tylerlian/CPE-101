@@ -1,0 +1,141 @@
+Welcome to the Moon Lander Simulation!
+Please enter initial altitude [1, 9999]: Please enter initial fuel amount [a positive number]: time=0, altitude=1300.0, velocity=0.0, fuel=500, fuel rate=0.0
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 0
+time=1, altitude=1299.19, velocity=-1.62, fuel=500, fuel rate=0
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 0
+time=2, altitude=1296.76, velocity=-3.24, fuel=500, fuel rate=0
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 0
+time=3, altitude=1292.71, velocity=-4.86, fuel=500, fuel rate=0
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 0
+time=4, altitude=1287.04, velocity=-6.48, fuel=500, fuel rate=0
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 0
+time=5, altitude=1279.75, velocity=-8.1, fuel=500, fuel rate=0
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 0
+time=6, altitude=1270.84, velocity=-9.72, fuel=500, fuel rate=0
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 0
+time=7, altitude=1260.31, velocity=-11.34, fuel=500, fuel rate=0
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 0
+time=8, altitude=1248.16, velocity=-12.96, fuel=500, fuel rate=0
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 0
+time=9, altitude=1234.39, velocity=-14.58, fuel=500, fuel rate=0
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 0
+time=10, altitude=1219.0, velocity=-16.2, fuel=500, fuel rate=0
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 2
+time=11, altitude=1202.32, velocity=-17.17, fuel=498, fuel rate=2
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 2
+time=12, altitude=1184.66, velocity=-18.14, fuel=496, fuel rate=2
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 2
+time=13, altitude=1166.04, velocity=-19.11, fuel=494, fuel rate=2
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 2
+time=14, altitude=1146.45, velocity=-20.08, fuel=492, fuel rate=2
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 3
+time=15, altitude=1126.05, velocity=-20.73, fuel=489, fuel rate=3
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 3
+time=16, altitude=1104.99, velocity=-21.38, fuel=486, fuel rate=3
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 3
+time=17, altitude=1083.28, velocity=-22.03, fuel=483, fuel rate=3
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 3
+time=18, altitude=1060.92, velocity=-22.68, fuel=480, fuel rate=3
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 3
+time=19, altitude=1037.91, velocity=-23.33, fuel=477, fuel rate=3
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 3
+time=20, altitude=1014.25, velocity=-23.98, fuel=474, fuel rate=3
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 3
+time=21, altitude=989.94, velocity=-24.63, fuel=471, fuel rate=3
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 3
+time=22, altitude=964.99, velocity=-25.28, fuel=468, fuel rate=3
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 3
+time=23, altitude=939.38, velocity=-25.93, fuel=465, fuel rate=3
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 3
+time=24, altitude=913.12, velocity=-26.58, fuel=462, fuel rate=3
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 3
+time=25, altitude=886.21, velocity=-27.23, fuel=459, fuel rate=3
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 3
+time=26, altitude=858.65, velocity=-27.88, fuel=456, fuel rate=3
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 3
+time=27, altitude=830.44, velocity=-28.53, fuel=453, fuel rate=3
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 3
+time=28, altitude=801.59, velocity=-29.18, fuel=450, fuel rate=3
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 3
+time=29, altitude=772.09, velocity=-29.83, fuel=447, fuel rate=3
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 3
+time=30, altitude=741.93, velocity=-30.48, fuel=444, fuel rate=3
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 5
+time=31, altitude=711.45, velocity=-30.48, fuel=439, fuel rate=5
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 5
+time=32, altitude=680.97, velocity=-30.48, fuel=434, fuel rate=5
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 6
+time=33, altitude=650.65, velocity=-30.16, fuel=428, fuel rate=6
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 6
+time=34, altitude=620.65, velocity=-29.84, fuel=422, fuel rate=6
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 6
+time=35, altitude=590.97, velocity=-29.52, fuel=416, fuel rate=6
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 6
+time=36, altitude=561.61, velocity=-29.2, fuel=410, fuel rate=6
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 6
+time=37, altitude=532.57, velocity=-28.88, fuel=404, fuel rate=6
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 6
+time=38, altitude=503.85, velocity=-28.56, fuel=398, fuel rate=6
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 6
+time=39, altitude=475.45, velocity=-28.24, fuel=392, fuel rate=6
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 7
+time=40, altitude=447.53, velocity=-27.59, fuel=385, fuel rate=7
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 7
+time=41, altitude=420.26, velocity=-26.94, fuel=378, fuel rate=7
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 7
+time=42, altitude=393.64, velocity=-26.29, fuel=371, fuel rate=7
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 7
+time=43, altitude=367.67, velocity=-25.64, fuel=364, fuel rate=7
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 7
+time=44, altitude=342.36, velocity=-24.99, fuel=357, fuel rate=7
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 7
+time=45, altitude=317.69, velocity=-24.34, fuel=350, fuel rate=7
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 7
+time=46, altitude=293.68, velocity=-23.69, fuel=343, fuel rate=7
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 7
+time=47, altitude=270.31, velocity=-23.04, fuel=336, fuel rate=7
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 7
+time=48, altitude=247.59, velocity=-22.39, fuel=329, fuel rate=7
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=49, altitude=225.69, velocity=-21.42, fuel=321, fuel rate=8
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=50, altitude=204.75, velocity=-20.45, fuel=313, fuel rate=8
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=51, altitude=184.79, velocity=-19.48, fuel=305, fuel rate=8
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=52, altitude=165.8, velocity=-18.51, fuel=297, fuel rate=8
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=53, altitude=147.78, velocity=-17.54, fuel=289, fuel rate=8
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=54, altitude=130.73, velocity=-16.57, fuel=281, fuel rate=8
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=55, altitude=114.64, velocity=-15.6, fuel=273, fuel rate=8
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=56, altitude=99.53, velocity=-14.63, fuel=265, fuel rate=8
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=57, altitude=85.39, velocity=-13.66, fuel=257, fuel rate=8
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=58, altitude=72.22, velocity=-12.69, fuel=249, fuel rate=8
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=59, altitude=60.02, velocity=-11.72, fuel=241, fuel rate=8
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=60, altitude=48.79, velocity=-10.75, fuel=233, fuel rate=8
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=61, altitude=38.52, velocity=-9.78, fuel=225, fuel rate=8
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 9
+time=62, altitude=29.39, velocity=-8.48, fuel=216, fuel rate=9
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 9
+time=63, altitude=21.56, velocity=-7.18, fuel=207, fuel rate=9
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 9
+time=64, altitude=15.03, velocity=-5.88, fuel=198, fuel rate=9
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 9
+time=65, altitude=9.8, velocity=-4.58, fuel=189, fuel rate=9
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=66, altitude=5.71, velocity=-3.61, fuel=181, fuel rate=8
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=67, altitude=2.58, velocity=-2.64, fuel=173, fuel rate=8
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=68, altitude=0.42, velocity=-1.67, fuel=165, fuel rate=8
+Please enter fuel rate [0, 9]: Fuel rate will be changed to: 8
+time=69, altitude=-0.77, velocity=-0.7, fuel=157, fuel rate=8
+Status at landing - The eagle has landed!
