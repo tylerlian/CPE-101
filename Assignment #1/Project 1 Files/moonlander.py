@@ -99,6 +99,7 @@ def get_fuel_rate(fuel):
 
 # updates acceleration for every new time
 def update_acceleration(gravity, fuel_rate):
+    
     acceleration = gravity * ((float(fuel_rate) / 5.0) - 1)
     acceleration = round(acceleration, 2)
     return acceleration
