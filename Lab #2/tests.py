@@ -3,7 +3,7 @@
 # Section: 15
 # Lab 2, Problem Set 2
 # Name: Tyler Lian
-# Cal Poly ID: 015896500
+# Cal Poly ID: tklian
 ################################
 
 # runs all functions if file is run as main file

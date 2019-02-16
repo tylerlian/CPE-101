@@ -3,7 +3,7 @@
 # Section: 15
 # Lab #4 : String Manipulation
 # Name: Tyler Lian
-# Cal Poly ID: 015896500
+# Cal Poly ID: tklian
 ################################
 
 # imports character_manipulation file

@@ -3,7 +3,7 @@
 # Section: 15
 # Lab 3: Program
 # Name: Tyler Lian
-# Cal Poly ID: 015896500
+# Cal Poly ID: tklian
 ################################
 
 import sys
@@ -25,7 +25,7 @@ def max_of_three(x, y, z):
         return x
 
     # y is largest    
-    elif y > x and y > z:
+    elif  y > z:
         return y
 
     # if x & y aren't largest z is    

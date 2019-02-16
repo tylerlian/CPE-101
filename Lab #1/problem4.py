@@ -3,7 +3,7 @@
 # Section: 15
 # Lab 1, Problem Set 1
 # Name: Tyler Lian
-# Cal Poly ID: 015896500
+# Cal Poly ID: tklian
 ################################
 
 if __name__ == "__main__":

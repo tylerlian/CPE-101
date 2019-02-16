@@ -3,7 +3,7 @@
 # Section: 15
 # Project 1: Tests
 # Name: Tyler Lian
-# Cal Poly ID: 015896500
+# Cal Poly ID: tklian
 ################################
 
 # imports moonlander.py and Moonlander class from moonlander.py

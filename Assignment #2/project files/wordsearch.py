@@ -3,171 +3,129 @@
 # Section: 15
 # Assignment #2 : Program
 # Name: Tyler Lian
-# Cal Poly ID: 015896500
+# Cal Poly ID: tklian
 ################################
 
 # shows the crossword
-def display(list):
+def display(line):
     
     # initializes variables
     x = 0
     y = 10
 
-    # initializes list
-    row = []
-
     # loops through making 10 character lines
     for i in range(10):
-        print(list[x:y])
-        row.append(list[x:y])
+        print(line[x:y])
         x += 10
         y += 10
-    return row
+    print("")
+
+    return
 
 # searches for given word
 def find_word(puzzle, word):
     
-    # initialzes list
-    y = []
+    x = puzzle.find(word)
 
-    # intiizles length of list
-    x = len(word)
-
-    # word not found
-    w = 0
-
-    # searches for: "FORWARD" words
-    placement = "(FORWARD)"
-    for j in range(10):
-        column = puzzle[j].find(word[0])
-        if(column != -1):
-            x = (word[0] + ": " + placement + " row: " + str(j) + " column: " + str(column))
-            w = 1
-    
-    # searches for: "BACKWARD" words
-    placement = "(BACKWARD)"
-    puzzle_changed = reverse_string(puzzle)
-    for j in range(10):
-        column = puzzle_changed[j].find(word[0])
-        if(column != -1):
-            column = 9 - column
-            x = (word[0] + ": " + placement + " row: " + str(j) + " column: " + str(column))
-            w = 1
-    
-    # searches for: "DOWN" words
-    placement = "(DOWN)"
-    row_len = len(puzzle[0])        
-    puzzle_changed = transpose_string(puzzle, row_len)
-    word_c = word
-    for j in range(10):
-        column = puzzle_changed[j].find(word[0])
-        if(column != -1):
-            x = (word[0] + ": " + placement + " row: " + str(column) + " column: " + str(j))
-            w = 1
-
-    # searches for: "UP" words
-    placement = "(UP)"
-    row_len = len(puzzle[0])        
-    puzzle_changed = transpose_string(puzzle, row_len)
-    puzzle_changed = reverse_string(puzzle_changed)
-    for j in range(10):
-        column = puzzle_changed[j].find(word[0])
-        if(column != -1):
-            column = 9 - column
-            x = (word[0] + ": " + placement + " row: " + str(column) + " column: " + str(j))
-            w = 1
-    
-    # if word not found: "word not found"
-    if w == 0:
-        x = (word[0] + ": word not found")
-    
-    # returns string
     return x
 
 # reverses all strings in list
-def reverse_string(string):
+def reverse_string(line):
     
-    # initializes list
-    y = []
+    for i in range(len(line)):
+        r_line = line[::-1]
 
-    # reverses all strings in list
-    for i in range(len(string)):
-        x = string[i]
-        y.append(x[::-1])
-    return y
+    return r_line
 
 # tranposes all strings in list
-def transpose_string(string, row_len):
+def transpose_string(line, row_len, transpose_line):
     
-    # initializes the lists
-    transpose = []
-    finished = []
+    z = ""
+    x = 0 + transpose_line
 
-    # transposes all strings in list
-    for i in range(row_len):
-        
-        # appends all the string together
-        for j in range(len(string)):
-            line = string[j]
-            transpose.append(line[i])
-        
-        # join together string of characters
-        z = ''.join(transpose)
-        z = str(z)
-        finished.append(z)
+    for j in range(row_len):
+        y = line[x]
+        z += y
+        x += row_len
 
-        # take out last string appended
-        for x in range(len(string)):
-            transpose.pop(0) 
-    
-    # return transposed puzzle
-    return finished
-
-# appends the words into a list
-def word_list(word):
-
-    # initializes the lists
-    y = []
-
-    # counts how many spaces are in the string
-    x = word.count(" ")
-
-    # loops appending words into list y
-    for i in range(x + 1):
-        z = word.find(" ")
-        
-        # last word gets appended
-        if word.find(" ") == -1:
-            y.append(word)
-            return y
-        
-        # removes word once appended
-        string = word[0:z]
-        y.append(string)
-        word = word[(z+1):]
-
+    return z
 
 # runs the functions
 def main():
 
-    # initializes list
-    word = []
-
     # obtains lines from files
     line = input()
     word = input().strip("/n")
+    w = word.count(" ")
+    display(line)
 
-    # creates word list
-    word = word_list(word)
+    for i in range(w + 1):
+        x = 0
+        y = 10
+        transpose_line = 0
+        not_found = 0
+        found = 0
+        col = 0
+        done = 0
 
-    # prints the puzzle and initializes 'puzzle'
-    puzzle = display(line)
+        w = word.find(" ")
 
-    # checks for puzzle words
-    for i in range(len(word)):
-        x = find_word(puzzle, word)
-        print(x)
-        word.pop(0)
+        if w == -1:
+            z = word[0:len(word)]
+        else:
+            z = word[0:w]
+
+        for j in range(10):
+            
+            if done == 0:
+                
+                position = ""
+                puzzle = line[x:y]
+   
+                if -1 != find_word(puzzle, z):
+                    col = find_word(puzzle, z)
+                    position = "(FORWARD)"
+                    found += 1
+
+                puzzle_r = reverse_string(puzzle)
+                if (-1 != find_word(puzzle_r, z)) and (col == 0):
+                    col = find_word(puzzle_r, z)
+                    col = 9 - col
+                    position = "(BACKWARD)"
+                    found += 1
+
+                puzzle_t = transpose_string(line, 10, transpose_line)
+                if (-1 != find_word(puzzle_t, z)) and (col == 0):
+                    col = find_word(puzzle_t, z)
+                    position = "(DOWN)"
+                    found += 2
+
+                puzzle_tr = reverse_string(puzzle_t)
+                if (-1 != find_word(puzzle_tr, z)) and (col == 0):
+                    col = find_word(puzzle_tr, z)
+                    col = 9 - col
+                    position = "(UP)"
+                    found += 2
+
+                if (found != 0):
+
+                    row = int(x / 10)
+
+                    if found == 2:
+                        print(z + ": " + position + " row: " + str(col) + " col: " + str(transpose_line))
+                    elif found == 1:
+                        print(z + ": " + position + " row: " + str(row) + " col: " + str(col))
+                    
+                    done = 1
+
+                x += 10
+                y += 10
+                transpose_line += 1  
+
+        if done == 0:
+            print(z + ": word not found")  
+
+        word = word[(w+1):len(word)]
 
 # runs the main function
 if __name__ == "__main__":

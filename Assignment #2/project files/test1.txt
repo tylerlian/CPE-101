@@ -8,10 +8,11 @@ LGQCKGMMCT
 YCSLOACUZM
 XVDMGSXCYZ
 UUIUNIXFNU
-UNIX: (FORWARD) row: 9 column: 3
-CALPOLY: (DOWN) row: 1 column: 0
+
+UNIX: (FORWARD) row: 9 col: 3
+CALPOLY: (DOWN) row: 1 col: 0
 GCC: word not found
-SLO: (FORWARD) row: 7 column: 2
-COMPILE: (UP) row: 6 column: 8
-VIM: (BACKWARD) row: 1 column: 4
+SLO: (FORWARD) row: 7 col: 2
+COMPILE: (UP) row: 6 col: 8
+VIM: (BACKWARD) row: 1 col: 4
 TEST: word not found

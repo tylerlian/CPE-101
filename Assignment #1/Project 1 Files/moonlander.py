@@ -3,7 +3,7 @@
 # Section: 15
 # Project 1: Program
 # Name: Tyler Lian
-# Cal Poly ID: 015896500
+# Cal Poly ID: tklian
 ################################
 
 # import packages

@@ -3,7 +3,7 @@
 # Section: 15
 # Lab 3: Circle
 # Name: Tyler Lian
-# Cal Poly ID: 015896500
+# Cal Poly ID: tklian
 ################################
 
 # imports packages

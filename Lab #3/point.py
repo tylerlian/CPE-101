@@ -3,7 +3,7 @@
 # Section: 15
 # Lab 3: Point
 # Name: Tyler Lian
-# Cal Poly ID: 015896500
+# Cal Poly ID: tklian
 ################################
 
 # creates point class

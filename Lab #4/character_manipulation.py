@@ -3,7 +3,7 @@
 # Section: 15
 # Lab #4 : Character Manipulation
 # Name: Tyler Lian
-# Cal Poly ID: 015896500
+# Cal Poly ID: tklian
 ################################
 
 # checks if the character is lowercase

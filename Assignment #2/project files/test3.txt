@@ -8,18 +8,19 @@ IDBSLSAAOM
 IGOSMONDFL
 HHNGMSDCMA
 CMIRRSMLHP
-SLACK: (DOWN) row: 0 column: 4
-HIGH: (BACKWARD) row: 2 column: 9
-HIGHLAND: (BACKWARD) row: 2 column: 9
-CHORRO: (FORWARD) row: 5 column: 3
+
+SLACK: (DOWN) row: 0 col: 4
+HIGH: (BACKWARD) row: 2 col: 9
+HIGHLAND: (BACKWARD) row: 2 col: 9
+CHORRO: (FORWARD) row: 5 col: 3
 PEACH: word not found
-BROAD: (UP) row: 6 column: 2
-GRAND: (DOWN) row: 4 column: 6
-OSOS: (DOWN) row: 5 column: 5
+BROAD: (UP) row: 6 col: 2
+GRAND: (DOWN) row: 4 col: 6
+OSOS: (DOWN) row: 5 col: 5
 MORRO: word not found
-HIGUERA: (DOWN) row: 0 column: 7
-MARSH: (UP) row: 6 column: 9
-FOOTHILL: (UP) row: 7 column: 8
+HIGUERA: (DOWN) row: 0 col: 7
+MARSH: (UP) row: 6 col: 9
+FOOTHILL: (UP) row: 7 col: 8
 NIPOMO: word not found
-MILL: (FORWARD) row: 1 column: 6
-PALM: (UP) row: 9 column: 9
+MILL: (FORWARD) row: 1 col: 6
+PALM: (UP) row: 9 col: 9
