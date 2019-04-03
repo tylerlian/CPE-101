@@ -51,41 +51,41 @@ def are_divisible_by_n(int_list, n):
     return y
 
 # returns sum of list
-def sum_101(int_list):
+def sum_101(my_list):
     y = 0
-    for i in range(len(int_list)):
-        y += int_list[i]
+    for i in range(len(my_list)):
+        y += my_list[i]
     return y
 
 # returns index of smallest number in list
-def index_of_smallest(int_list):
+def index_of_smallest(my_list):
     
     # initializes variables
     y = []
     x = 0
 
-    # initialzes y list as int_list
-    while x != len(int_list):
-        y.append(int_list[x])
+    # initialzes y list as my_list
+    while x != len(my_list):
+        y.append(my_list[x])
         x += 1
 
     # if list doesn't have any values return '-1'
     x = 0
-    if len(int_list) == 0:
+    if len(my_list) == 0:
         return -1
     
     # removes numbers from list to find smallest number
-    while (x+1) != len(int_list):
+    while (x+1) != len(my_list):
 
         # remove greater number
-        if int_list[x] < int_list[x+1]:
-            int_list.pop(x+1)
-        elif int_list[x] > int_list[x+1]:
-            int_list.pop(x)
+        if my_list[x] < my_list[x+1]:
+            my_list.pop(x+1)
+        elif my_list[x] > my_list[x+1]:
+            my_list.pop(x)
         
         # remove number to right if equal
-        elif int_list[x] == int_list[x+1]:
-            int_list.pop(x+1)
+        elif my_list[x] == my_list[x+1]:
+            my_list.pop(x+1)
 
     # returns index of smallest number        
-    return y.index(int_list[x])
+    return y.index(my_list[x])

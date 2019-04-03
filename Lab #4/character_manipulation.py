@@ -10,7 +10,7 @@
 def is_lower(char):
 
     # if character code is less than lowercase it is uppercase
-    if ord(char) < ord("a"):
+    if ord(char) < ord("a") or ord(char) > ord("z"):
 
         # letter is uppercase
         return False
@@ -21,9 +21,10 @@ def is_lower(char):
         return True
 
 # test for lowercase letters
-assert is_lower("a") == True
-assert is_lower("A") == False
-assert is_lower("y") == True
+for i in range(1,128):
+    char = chr(i)
+    print(chr(i))
+    print(is_lower(char))
 
 # moves the character 13 characters forward
 def char_rot_13(char):

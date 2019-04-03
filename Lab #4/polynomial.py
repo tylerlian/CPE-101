@@ -36,40 +36,32 @@ poly3 = [1,2,2]
 # multiplies two of given polynominals
 def poly_mul(poly1, poly2):
     o_poly = []
+    d_poly = []
 
     # appends power 0 to array
-    o_poly.append(poly2[0] * poly1[0])
+    d_poly.append(poly2[0] * poly1[0])
     
     # appends power 1 to array
     o_poly.append(poly2[0] * poly1[1])
     o_poly.append(poly2[1] * poly1[0])
-    x_1 = o_poly[1] + o_poly[2]
-    for i in range(2):
-        o_poly.pop(1)
-    o_poly.append(x_1)
+    d_poly.append(o_poly[0] + o_poly[1])
 
     # appends power 2 to array
     o_poly.append(poly2[0] * poly1[2])
     o_poly.append(poly2[1] * poly1[1])
     o_poly.append(poly2[2] * poly1[0])
-    x_2 = o_poly[2] + o_poly[3] + o_poly[4]
-    for i in range(3):
-        o_poly.pop(2)
-    o_poly.append(x_2)
+    d_poly.append(o_poly[2] + o_poly[3] + o_poly[4])
 
     # appends power 3 to array
     o_poly.append(poly2[1] * poly1[2])
     o_poly.append(poly2[2] * poly1[1])
-    x_3 = o_poly[3] + o_poly[4]
-    for i in range(2):
-        o_poly.pop(3)
-    o_poly.append(x_3)
+    d_poly.append(o_poly[5] + o_poly[6])
 
     # appends power 4 to array
-    o_poly.append(poly2[2] * poly1[2])
+    d_poly.append(poly2[2] * poly1[2])
 
     # returns array
-    return o_poly
+    return d_poly
 
 # tests if the multiplying function works properly
 assert poly_mul(poly1, poly2) == [12,7,8,2,1]
